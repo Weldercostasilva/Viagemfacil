@@ -1,74 +1,184 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/newStyle.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <script src="https://kit.fontawesome.com/ee52d80ba0.js" crossorigin="anonymous"></script>
-   <title>Viagem Fácil</title>
-</head>
-<body>
-   <header>
-   
- <div class="menuHeader">
-    <a href="./destinosMaisEscolhidos.html" title="Destinos mais escolhidos">
-      <img src="ASSETS/HEART.png" alt="HEART" width="45" height="45">
-   <button class="buttonh1">Destinos mais Procurados</button>
-   </a>
-   <a>
-      <img src="assets/NOTES.png" alt="NOTES" width="50" height="50">
-   <button class="buttonh2">Notificações</button>
-   </a>
-   <button class="buttonh3">Fazer Login</button>
- </div>
- <div class="logoHome">
-   <a href="./index.html">
-    <img width="300" src="./assets/logo_viajem_facil.png" alt="#">
-   </a>
- </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/ÍCONE.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+    <script src="./main.js"></script>
+    <title>Acesso - Viagem Fácil</title>
+  </head>
+  <body>
+    <header>
+      <div class="cabecalho">
+        <a href="./index.html">
+          <img src="assets/Logovetorizada.svg" class="logo" />
+        </a>
+        <div class="sessaocabecalho">
+          <div class="botcabecalho">
+            <a href="./destinosMaisEscolhidos.html"
+              ><img src="assets/coracao 1.png"
+            /></a>
+            <a href="./destinosMaisEscolhidos.html">Destinos favoritos</a>
+          </div>
+          <div class="botcabecalho">
+            <a href="./notification.html">
+              <img src="assets/packard-bell 1.png"
+            /></a>
+            <a href="./notification.html">Notificações</a>
+          </div>
+          <div class="fazerlogin">
+            <a href="./login.html">Fazer login</a>
+          </div>
+        </div>
+      </div>
+      <div class="gbotoes">
+        <div class="botao" onclick="redirectToLink('https://www.google.com')">
+          <div class="contbotao">
+            <img src="assets/mapa 1.png" />
+            <a>Destinos mais escolhidos</a>
+          </div>
+        </div>
+        <div class="botao" onclick="redirectToLink('https://www.google.com')">
+          <div class="contbotao">
+            <img src="assets/mapa 1.png" />
+            <a>Roteiros <span class="sem-quebra"> pré-definidos</span></a>
+          </div>
+        </div>
+        <div class="botao" onclick="redirectToLink('https://www.google.com')">
+          <div class="contbotao">
+            <img src="assets/avaliacao 1.png" />
+            <a>Feedback <span class="sem-quebra">dos clientes</span></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main-home">
+      <div class="cpa">
+        <div class="chamada">
+          <p class="tittle">VOCÊ ESCOLHE O DESTINO</p>
+          <p class="sub">NÓS CRIAMOS O ROTEIRO DOS SONHOS</p>
+        </div>
+        <input
+          type="search"
+          placeholder="Insira uma cidade e seu país correspondente."
+        />
+      </div>
+    </main>
 
-   </header>
-  <div class="menuHome">
-     <div class="homeButton">
-        <button class="button1">Destinos mais escolhidos</button>
-        <button class="button2">Roteiros  Pré-definidos</button>
-        <button class="button3">Feedback dos clientes</button>
-     </div>
-  </div>
-  
-</body>
-  <footer>
-      <section class="Sobre">
-    <p>Sobre o Viagem Fácil</p>
-      <ul>
-        <li>Quem somos</li>
-        <li>Fale Conosco</li>
-      </ul>
-      </section>
-      <section class="Explorar">
-        <p>Explorar</p>
-          <ul>
-            <li>Inclua o destino</li>
-            <li>Nos Avalie</li>
-            <li>Cadastre-se</li>
-            <li>Suporte</li>
-            <li>Escolha dos viajantes</li>
-          </ul>
-          </section>
-          <section class="Baixar">
-            <p>Baixar App</p>
-              <ul>
-                <li>Para Android</li>
-                <li>Para IOS</li>
-              </ul>
-              </section>
-              <div class="imagens"> 
-              <img width="50" src="ASSETS/INSTA.PNG" alt="instagram">
-              <img width="50" src="ASSETS/X.PNG" alt="X">
-              <img width="50" src="ASSETS/FACE.PNG" alt="Facebook">
-              <img width="180" src="ASSETS/LOGOBRANCA.PNG" alt="LOGOBRANCA">
-              </div>       
-            </footer>
-          
+    <div class="data-comemorativa">
+      <div class="frame4">
+        <div class="frame3">
+          <div class="text-container">
+            <p class="tittle-data-comemorativa">
+              Desfrute do Réveillon com Roteiros Personalizados e Velozes
+            </p>
+            <p class="sub-data-comemorativa">
+              Deixe o nosso sistema inteligente criar um roteiro sob medida para
+              a sua celebração de Réveillon. Em apenas alguns minutos,
+              considerando suas preferências e interesses, você terá um
+              itinerário completo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bons-destinos-1">
+      <div class="bons-destinos-2">
+        <p class="bons-destinos-texto">
+          Descubra seus próximos destinos de férias com os melhors roteiros:
+        </p>
+        <div class="destinos">
+          <div class="imagem-1">
+            <p class="imagem-destinos">Rio de Janeiro Brasil</p>
+          </div>
+          <div class="imagem-2">
+            <p class="imagem-destinos">Orlando Estados Unidos</p>
+          </div>
+          <div class="imagem-3">
+            <p class="imagem-destinos">
+              Gramado <br />
+              Brasil
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-home">
+      <div class="frame44">
+        <div class="frame42">
+          <div class="frame39">
+            <div class="frame37">
+              <p class="footer-chamada">Baixe o aplicativo</p>
+              <a href=""
+                ><p class="footer-subchamada">Aplicativo para Android</p></a
+              >
+              <a href="">
+                <p class="footer-subchamada">Aplicativo para Iphone</p>
+              </a>
+            </div>
+            <div class="frame35">
+              <a href=""><p class="footer-chamada">Sobre o Viagem Fácil</p></a>
+              <a href=""><p class="footer-subchamada">Quem somos</p></a>
+              <a href=""><p class="footer-subchamada">Fale Conosco</p></a>
+            </div>
+            <div class="frame36">
+              <a href=""> <p class="footer-chamada">Explorar</p></a>
+              <a href=""> <p class="footer-subchamada">Avalie-nos</p></a>
+              <a href=""> <p class="footer-subchamada">Inclua o destino</p></a>
+              <a href=""> <p class="footer-subchamada">Cadastra-se</p></a>
+              <a href="">
+                <p class="footer-subchamada">Escolha dos viajantes</p></a
+              >
+              <a href="">
+                <p class="footer-subchamada">Sustentabilidade ambiental</p></a
+              >
+              <a href=""> <p class="footer-subchamada">Suporte central</p></a>
+              <a href="">
+                <p class="footer-subchamada">Leia artigos de viagem</p>
+              </a>
+            </div>
+          </div>
+          <div class="frame38">
+            <a href=""> <p class="footer-chamada-final">Termos de uso</p></a>
+            <a href="">
+              <p class="footer-chamada-final">Política de privacidade</p></a
+            >
+            <a href="">
+              <p class="footer-chamada-final">
+                Permissão para instalação de cookies
+              </p>
+            </a>
+            <a href=""> <p class="footer-chamada-final">Mapa do site</p></a>
+            <a href="">
+              <p class="footer-chamada-final">Como o site funciona</p>
+            </a>
+            <a href="">
+              <p class="footer-chamada-final">Fale Conosco</p>
+            </a>
+          </div>
+        </div>
+        <div class="frame45">
+          <div class="frame40">
+            <p class="footer-texto-final">
+              © 2023 Viagem Fácil LLC Todos os direitos reservados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
